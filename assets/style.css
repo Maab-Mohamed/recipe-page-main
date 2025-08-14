@@ -1,0 +1,157 @@
+:root{
+--White: hsl(0, 0%, 100%);
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+--Brown-800: hsl(14, 45%, 36%);
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+
+font-size: clamp(1rem , 2.5vw , 2rem);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Young Serif", serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--Stone-100);
+    width: 100vw;
+}
+.container{
+    background-color: var(--White);
+    width: clamp(30rem, 30vw, 40rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: clamp(2rem, 4vw, 6rem) ;
+    border-radius: clamp(1rem, 2vw, 3rem);
+    padding: clamp(1rem, 2vw, 3rem);
+}
+.container .content{
+    width: 95%;
+}
+.container .content img{
+    width: 100%;
+    border-radius: clamp(.8rem , 1vw, .5rem);
+}
+.container .content .title h1{
+    font-size:  clamp(1.3rem, 2.5vw, 3.5rem);
+    color: var(--Stone-900);
+    margin: clamp(.4rem, .6vw, .8rem) 0;
+    font-weight: 400;
+}
+ p{
+    font-weight: 400;
+    font-size: .6rem;
+    color: var(--Stone-600);
+    font-family: Roboto;
+    margin: .2rem;
+}
+.container .content .prep{
+    background-color: var(--Rose-50);
+    width: 90%;
+    margin: 0.8em 0;
+    border-radius: .2rem;
+    padding: 1rem;
+
+}
+ h5{
+    color: var(--Rose-800);
+    font-size: .8rem;
+    font-family: Roboto;
+    padding-bottom: .2rem;
+    font-weight: 800;
+
+}
+.container .content .prep ul{
+    padding-left: 2rem;
+
+}
+  li::before {
+        content: ""; /* Custom bullet character */
+        margin-right: .5rem; /* Adjust space between custom bullet and text */
+    }
+.container .content .prep ul li{
+    font-weight: normal;
+    font-size: .6rem;
+    padding-bottom: .1rem;
+    font-weight: 400;
+    font-family: Roboto;
+    color: var(--Stone-600);
+    margin: .4rem 0;
+
+}
+.container .content .prep ul li::marker {
+  color: var(--Rose-800); 
+}
+
+span{
+    font-weight: 900;
+    font-family: Roboto;
+
+}
+
+ h4{
+    color: var(--Brown-800);
+    font-size: .9rem;
+    font-weight: 400;
+
+}
+.container .content .ing ul li{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: .6rem;
+    padding: .2rem;
+    color: var(--Stone-600);
+    margin-left: .8rem;
+}
+.container .content .ing ul li::marker{
+    color: var(--Brown-800);
+}
+
+hr{
+    background-color: var(--Stone-150);
+    margin: 1rem 0;
+}
+.container .content .instr ol li {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: .6rem;
+    padding: .2rem;
+    color: var(--Stone-600);
+    margin-left: .8rem;
+    line-height: .8rem;
+    list-style-position: inside;
+    
+}
+ol li::marker{
+    color: var(--Brown-800);
+}
+table{
+    width: 100%;
+    margin: .5rem;
+    border-collapse: collapse;
+
+}
+tr, td{
+    font-family: Roboto;
+    font-size: .6rem;
+    font-weight: 400;
+    color: var(--Stone-600);
+}
+table tr{
+    border: 5px;
+    margin: 10rem;
+}
+table td{
+    border-bottom: 5rem;
+    padding: .5rem;
+}
+table td span{
+    color: var(--Brown-800);
+}
